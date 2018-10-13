@@ -48,6 +48,8 @@ public class MemoryChecker implements CheckerInterface {
         sb.append(Common.NEXT_LINE);
         sb.append("例如/proc/sys/vm/max_map_count");
         sb.append(Common.NEXT_LINE);
+        sb.append("也或者是jdk版本和系统版本不对，导致内存申请失败");
+        sb.append(Common.NEXT_LINE);
         sb.append("如果想查具体原因，需要根据jvm源码和下面的堆栈进行分析");
         GuiLayout layout=new GuiLayout();
         layout.setAdvice(sb.toString());
